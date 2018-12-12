@@ -1,4 +1,86 @@
 body {
-  background: #eee;
+  background: #3e464c;
   font-family: 'Courier New', Courier, monospace;
+}
+
+#main h1 {
+  color: #ffc107;
+  text-align: center;
+}
+
+#main {
+  padding: 0px;
+  box-sizing: border-box;
+  width: 60%;
+  height: 100%;
+}
+
+#book-list {
+  padding: 0;
+}
+
+#book-list li {
+  display: inline-block;
+  margin: 0.75rem;
+  padding: .5rem;
+  border-radius: .25rem;
+  border: 1px solid #ffc107;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: #ffc107;
+}
+
+#book-details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: #ffc107;
+  padding: 2em;
+  overflow: auto;
+  box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  color: #3e464c;
+}
+
+form {
+  background: #374046;
+  padding: 1.25rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 420px;
+}
+
+form .field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5rem;
+}
+
+form label {
+  color: #ffc107;
+  text-align: right;
+  padding: .4rem;
+}
+
+form input,
+form select {
+  margin: 4px 0;
+  padding: .4rem;
+  box-sizing: border-box;
+}
+
+form button {
+  color: #fff;
+  font-size: 2em;
+  background: #ffc107;
+  border: 0;
+  padding: 0 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
 }
